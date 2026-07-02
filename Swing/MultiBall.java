@@ -35,7 +35,7 @@ class MultiBallPanel extends JPanel {
 
 public class MultiBall {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Multi Ball");
+        JFrame frame = new JFrame("Multi Ball 3");
         frame.setSize(400, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
