@@ -50,5 +50,4 @@ public class BankAccount {
         } catch (IllegalArgumentException e) {
             System.out.println("エラー: " + e.getMessage());
         }      
-    }
 }
