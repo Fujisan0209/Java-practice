@@ -19,6 +19,6 @@ public abstract class Account {
     public abstract String getTypeName();
 
     public String toString() {
-        System.out.println("[" + this.getTypeName() + "] " + this.owner + " 残高:" + this.balance + "円");
+        return "[" + this.getTypeName() + "] " + this.owner + " 残高:" + this.balance + "円";
     }
 }

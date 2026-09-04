@@ -49,5 +49,6 @@ public class BankAccount {
             BankAccount b2 =  new BankAccount(-100);
         } catch (IllegalArgumentException e) {
             System.out.println("エラー: " + e.getMessage());
-        }      
+        }     
+    } 
 }
