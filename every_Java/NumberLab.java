@@ -66,7 +66,7 @@ public class NumberLab {
         System.out.println("average({MAX,MAX}) = " + average(big) + " / 期待 2147483647");
 
         // B
-                System.out.println("---- 区画B ----");
+        System.out.println("---- 区画B ----");
         // 予想: 
         System.out.println("0.1 + 0.2 = " + (0.1 + 0.2));
         // 予想: 
