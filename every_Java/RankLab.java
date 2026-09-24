@@ -20,6 +20,7 @@ final class Player implements Comparable<Player> {
     //@Override
     //public int compareTo(Player other) { return Integer.compare(this.score, other.score); }
 
+    // 発展
     @Override
     public int compareTo(Player other) {
         int result = Integer.compare(this.score, other.score);   // ① まずスコアで比べる
