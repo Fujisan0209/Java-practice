@@ -65,7 +65,7 @@ public class HideLab {
         System.out.println("B-6 予想: Lamp/ 根拠: 上と同じ");
 
         System.out.println("--- C ---");
-        System.out.println("1行");
+        System.out.println("2行");
         System.out.println("C 根拠: 親のコンストラクタ（init 出力）が先に動き、watts の検査はその後だから");
         try { new Lamp(0); } catch (IllegalArgumentException e) { System.out.println("C-1 " + e.getMessage()); }
     }
