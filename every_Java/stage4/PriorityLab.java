@@ -1,9 +1,8 @@
-
 import java.util.*;
 
 record Task(String name, int priority) {
     Task {
-        if(name == null || name.isBlank()) throw new IllegalArgumentException("name must not be brank");
+        if(name == null || name.isBlank()) throw new IllegalArgumentException("name must not be blank");
         if(priority < 1 || 5 < priority) throw new IllegalArgumentException("priority must be 1 ~ 5");
     }
 
@@ -64,9 +63,11 @@ public class PriorityLab {
         System.out.println("== B 実行して、出力の理由を1行で ==");
         PriorityQueue<Task> q2 = byPriority(tasks);
         System.out.println("B-1 そのまま表示: " + q2);
+        // 中身はヒープだから
         List<String> first = drainInOrder(q2);
         List<String> second = drainInOrder(q2);
         System.out.println("B-2 1回目: " + first + " / 2回目: " + second);
+        // q2の中身は1回目でpollされたから
 
         System.out.println("== C 例外（5行出るはず） ==");
         checkThrows("C-1 名前 null", () -> new Task(null, 1));
