@@ -15,7 +15,7 @@ class FreezeLabTest {
     }
 
     @Test
-    void checkUOEafteraddViewNmaes() {
+    void viewNamesAddThrowsUOE() {
         Roster r = new Roster();
         r.add("佐藤");
         r.add("鈴木");
