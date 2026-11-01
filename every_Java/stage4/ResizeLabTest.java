@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ResizeLabTest {
     
     @Test
-    void add_forItems_bucketCountDoubles() {
+    void add_fourItems_bucketCountDoubles() {
         ResizeLab.ResizeHashSet set = new ResizeLab.ResizeHashSet(4);
         set.add("banana");
         set.add("cherry");
