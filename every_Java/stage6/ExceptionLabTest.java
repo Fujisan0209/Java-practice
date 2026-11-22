@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ExceptionLabTest {
     @Test
-    void parseLine_twoColumns_throwBadLine() {
+    void parseLine_twoColumns_throwsBadLine() {
         assertThrows(ExceptionLab.BadLineException.class, () -> ExceptionLab.parseLine("lunch,food"));
     }
 }
