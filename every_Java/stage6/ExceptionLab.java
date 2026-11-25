@@ -88,7 +88,7 @@ public class ExceptionLab {
         check("A-4", "BadLineException: wrong column count: lunch,food", result(() -> parseLine("lunch,food")));
         check("A-5", "BadLineException: amount is not a number: lunch,food,abc", result(() -> parseLine("lunch,food,abc")));
         check("A-6", "NumberFormatException", result(() -> {
-            try { parseLine("lunch,food,abc"); return "no exception"; }
+              try { parseLine("lunch,food,abc"); return "no exception"; }
             catch (BadLineException e) { return e.getCause() == null ? "cause なし" : e.getCause().getClass().getSimpleName(); }
         }));
         check("A-7", "BadLineException: amount is negative: lunch,food,-5", result(() -> parseLine("lunch,food,-5")));
