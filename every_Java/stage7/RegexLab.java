@@ -2,12 +2,15 @@ import java.util.*;
 import java.util.regex.*;
 
 public class RegexLab {
+
+    // 文字列が"\\d{4}-\\d{2}-\\d{2}"と同じ形か否か
     static boolean isDate(String s) {
         if(s == null) throw new IllegalArgumentException("s must not be null");
 
         return s.matches("\\d{4}-\\d{2}-\\d{2}");
     }
 
+    // 文字列から"(\\d+)円"を探し、group(1)をListに追加して返す
     static List<Integer> amounts(String memo) {
         if(memo == null) throw new IllegalArgumentException("s must not be null");
 
@@ -20,6 +23,7 @@ public class RegexLab {
         return result;
     }
 
+    // 文字列から"#([a-z]+)"を探し、group(1)をListに追加して返す
     static List<String> tags(String memo) {
         if(memo == null) throw new IllegalArgumentException("s must not be null");
 
@@ -31,6 +35,7 @@ public class RegexLab {
         return result;
     }
 
+    // 文字列から"\"(.*?)\""を探して最初に見つけたものをOptionalとして返す
     static Optional<String> firstQuoted(String memo) {
         if(memo == null) throw new IllegalArgumentException("s must not be null");
 
